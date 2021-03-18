@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>Tetris</title>
+    <style>
+        /* 브라우저 화면 구조 */
+        body {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header {
+            width: 100vw;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: blue;
+        }
+        aside {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        section {
+            width: 60%;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /*  */
+        div {
+            width: 150px;
+            height: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color:  rgb(238, 238, 238);
+        }
+
+        /* 게임보드 세팅 */
+        #tetris {
+            width: auto;
+            height: inherit;
+
+        }
+        #tetris tr{
+            width: inherit;
+            height: inherit;
+        }
+        #tetris td {
+            border: 2px solid white;
+            border-radius: 0.5rem;
+            width: 1.7em;
+            height: 1.7rem;
+        }
+        td.white {
+            background-color: rgb(238, 238, 238);
+        }
+        td.blue {
+            background-color: blue;
+        }
+        td.grey {
+            background-color: rgb(202, 202, 202);
+        }
+    </style>
+</head>
+<body>
+    <aside id="left"><div>LEFT</div></aside>
+    <section>
+        <header>TETRIS</header>
+        <table id="tetris"></table>
+    </section>
+    <aside id="right"><div>RIGHT</div></aside>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
